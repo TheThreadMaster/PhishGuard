@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Protection - Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading Settings...</div>
+        </div>
+    </div>
+    <div class="container">
+        <header class="card glow">
+            <h1 class="text-gradient">Settings</h1>
+            <div class="theme-toggle border-animate" id="themeToggle"></div>
+        </header>
+
+        <div class="settings-grid">
+            <!-- Protection Settings -->
+            <div class="settings-card card glow">
+                <h2 class="text-gradient">Protection Settings</h2>
+                <div class="setting-item scale-effect">
+                    <span>Real-time Protection</span>
+                    <label class="switch">
+                        <input type="checkbox" id="realTimeProtection" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item scale-effect">
+                    <span>Strict Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="strictMode">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item scale-effect">
+                    <span>Sound Effects</span>
+                    <label class="switch">
+                        <input type="checkbox" id="soundEffects" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Blacklist Management -->
+            <div class="settings-card card glow">
+                <h2 class="text-gradient">Blacklist Management</h2>
+                <div class="blacklist-container">
+                    <div class="input-group scale-effect">
+                        <input type="text" id="blacklistInput" placeholder="Enter domain to blacklist" aria-label="Domain to blacklist">
+                        <button class="action-button" id="addBlacklist">Add</button>
+                    </div>
+                    <div class="blacklist-list" id="blacklistList">
+                        <!-- Blacklisted domains will be added here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Settings -->
+            <div class="settings-card card glow">
+                <h2 class="text-gradient">Notification Settings</h2>
+                <div class="setting-item scale-effect">
+                    <span>Show Notifications</span>
+                    <label class="switch">
+                        <input type="checkbox" id="showNotifications" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item scale-effect">
+                    <span>Notification Sound</span>
+                    <label class="switch">
+                        <input type="checkbox" id="notificationSound" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Whitelist Management -->
+            <div class="settings-card card glow">
+                <h2 class="text-gradient">Whitelist Management</h2>
+                <div class="whitelist-container">
+                    <div class="input-group scale-effect">
+                        <input type="text" id="whitelistInput" placeholder="Enter domain to whitelist">
+                        <button class="action-button" id="addWhitelist">Add</button>
+                    </div>
+                    <div class="whitelist-list" id="whitelistList">
+                        <!-- Whitelisted domains will be added here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Settings -->
+            <div class="settings-card card glow">
+                <h2 class="text-gradient">Advanced Settings</h2>
+                <div class="setting-item scale-effect">
+                    <span>Auto-scan Downloads</span>
+                    <label class="switch">
+                        <input type="checkbox" id="autoScanDownloads" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item scale-effect">
+                    <span>Deep URL Analysis</span>
+                    <label class="switch">
+                        <input type="checkbox" id="deepUrlAnalysis">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="action-button border-animate" id="saveSettings">Save Settings</button>
+            <button class="action-button border-animate" id="resetSettings">Reset to Default</button>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html> 

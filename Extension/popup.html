@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Protection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Phishing Protection</h1>
+            <div class="theme-toggle" id="themeToggle"></div>
+        </header>
+        
+        <div class="status-indicator">
+            <div class="status-dot"></div>
+            <span>Protection Active</span>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>Links Checked</h3>
+                <p class="counter" id="linksChecked">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Threats Blocked</h3>
+                <p class="counter" id="threatsBlocked">0</p>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Settings</h2>
+            <div class="setting-item">
+                <span>Sound Effects</span>
+                <label class="switch">
+                    <input type="checkbox" id="soundToggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <div class="sound-indicator"></div>
+            </div>
+            <div class="setting-item">
+                <span>Real-time Protection</span>
+                <label class="switch">
+                    <input type="checkbox" id="protectionToggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <button class="action-button" id="view-settings">View Settings</button>
+            <button class="action-button" id="scan-now">Scan Now</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 

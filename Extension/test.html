@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Link Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+        .safe {
+            color: green;
+        }
+        .suspicious {
+            color: orange;
+        }
+        .dangerous {
+            color: red;
+        }
+        .warning {
+            color: #d13438;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff3f3;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Phishing Link Test Page</h1>
+    <div class="warning">⚠️ WARNING: These are test links for phishing detection. Do not visit these URLs in a real browser.</div>
+    
+    <div class="test-section">
+        <h2>Banking Phishing Links</h2>
+        <ul class="link-list">
+            <li class="dangerous">
+                <a href="https://secure-bank-login.com">secure-bank-login.com (Bank login phishing)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://www.bankofamerica-verify.com">bankofamerica-verify.com (Bank verification phishing)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://chase-banking-secure.com">chase-banking-secure.com (Bank security phishing)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://wellsfargo-account-update.com">wellsfargo-account-update.com (Account update phishing)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Payment Service Phishing</h2>
+        <ul class="link-list">
+            <li class="dangerous">
+                <a href="https://paypal-secure-verify.com">paypal-secure-verify.com (PayPal verification)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://venmo-account-update.com">venmo-account-update.com (Venmo account update)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://cashapp-payment-confirm.com">cashapp-payment-confirm.com (Cash App payment)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://stripe-payment-secure.com">stripe-payment-secure.com (Stripe payment)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Social Media Phishing</h2>
+        <ul class="link-list">
+            <li class="dangerous">
+                <a href="https://facebook-login-secure.com">facebook-login-secure.com (Facebook login)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://instagram-verify-account.com">instagram-verify-account.com (Instagram verification)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://twitter-account-secure.com">twitter-account-secure.com (Twitter security)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://linkedin-profile-update.com">linkedin-profile-update.com (LinkedIn update)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Email Service Phishing</h2>
+        <ul class="link-list">
+            <li class="dangerous">
+                <a href="https://gmail-account-secure.com">gmail-account-secure.com (Gmail security)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://outlook-verify-login.com">outlook-verify-login.com (Outlook verification)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://yahoo-mail-update.com">yahoo-mail-update.com (Yahoo Mail update)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://protonmail-secure-access.com">protonmail-secure-access.com (ProtonMail access)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Tech Company Phishing</h2>
+        <ul class="link-list">
+            <li class="dangerous">
+                <a href="https://apple-id-verify-secure.com">apple-id-verify-secure.com (Apple ID verification)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://microsoft-account-update.com">microsoft-account-update.com (Microsoft account)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://amazon-account-secure.com">amazon-account-secure.com (Amazon account)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://netflix-payment-update.com">netflix-payment-update.com (Netflix payment)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Government/Institution Phishing</h2>
+        <ul class="link-list">
+            <li class="dangerous">
+                <a href="https://irs-tax-refund.com">irs-tax-refund.com (IRS refund)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://social-security-verify.com">social-security-verify.com (Social Security)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://medicare-benefits-update.com">medicare-benefits-update.com (Medicare benefits)</a>
+            </li>
+            <li class="dangerous">
+                <a href="https://university-student-login.com">university-student-login.com (University login)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Common Safe Links (For Comparison)</h2>
+        <ul class="link-list">
+            <li class="safe">
+                <a href="https://www.google.com">Google (Safe)</a>
+            </li>
+            <li class="safe">
+                <a href="https://www.microsoft.com">Microsoft (Safe)</a>
+            </li>
+            <li class="safe">
+                <a href="https://www.github.com">GitHub (Safe)</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html> 
